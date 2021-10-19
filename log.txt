@@ -1,0 +1,1 @@
+transmission => downloads torrent file in linux

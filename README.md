@@ -1,22 +1,22 @@
 # Harddisk Encryption
 this sessions discuss about disk encryption in linux machine
 ### configuration
-$ sudo su
-$ lsblk
-$ cryptsetup --verbose --verify-passphrase luksFormat /dev/sd*
-$ fdisk -l
-$ mkfs.ext4 /dev/mapper/sd*
-$ tune2fs -m 0 /dev/mapper/sd*
-$ mkdir /mnt/encrypted
-$ mount /dev/mapper/sd* /mnt/encrypted
-$ touch /mnt/encrypted/test-file1.txt
-$ chown -R 'whoami':users /mnt/encrypted
-$ touch /mnt/encrypted/test-file2.txt
-$ umount /dev/mapper/sd*
-$ cryptsetup luksClose sd*
+$ sudo su <br />
+$ lsblk <br />
+$ cryptsetup --verbose --verify-passphrase luksFormat /dev/sd* <br />
+$ fdisk -l <br />
+$ mkfs.ext4 /dev/mapper/sd* <br />
+$ tune2fs -m 0 /dev/mapper/sd* <br />
+$ mkdir /mnt/encrypted <br />
+$ mount /dev/mapper/sd* /mnt/encrypted <br />
+$ touch /mnt/encrypted/test-file1.txt <br />
+$ chown -R 'whoami':users /mnt/encrypted <br />
+$ touch /mnt/encrypted/test-file2.txt <br />
+$ umount /dev/mapper/sd* <br />
+$ cryptsetup luksClose sd* <br />
 
 ### test configuration
-$ cryptsetup luksOpen /dev/sd* sd*
-$ mount /dev/mapper/sd* /mnt/encrypted
-$ umount /dev/mapper/sd*
-$ cryptsetup luksClose sd*
+$ cryptsetup luksOpen /dev/sd* sd* <br />
+$ mount /dev/mapper/sd* /mnt/encrypted <br />
+$ umount /dev/mapper/sd* <br />
+$ cryptsetup luksClose sd* <br />

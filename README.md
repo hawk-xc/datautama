@@ -21,3 +21,4 @@ $ mount /dev/mapper/sd* /mnt/encrypted <br />
 $ umount /dev/mapper/sd* <br />
 $ cryptsetup luksClose sd* <br />
 
+https://roadmap.sh/

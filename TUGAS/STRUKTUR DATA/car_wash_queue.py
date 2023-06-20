@@ -55,7 +55,7 @@ if __name__ == "__main__":
             elif masukan == 5:
                 print (q.isempty())
             else: break
-            time.sleep(0.8)
+            time.sleep(0.4)
         except ValueError:
             print ("masukan inputan sesuai daftar [1-6]\n\n"), time.sleep(2)
 

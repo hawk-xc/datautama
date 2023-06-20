@@ -39,7 +39,7 @@ if __name__ == "__main__":
     q = queue()
     while True:
         print ("\n\n==================== CAR WASH QUEUE SYSTEM ===================="), time.sleep(0.8)
-        print ("========================== Kelompok 5 ========================="), time.sleep(0.8)
+        print ("========================== Kelompok 3 ========================="), time.sleep(0.8)
         print ("1 = tambahkan data plat nomor pada antrean\n2 = keluarkan data plat nomor pada antrean\n3 = cek jumlah data pada antrean\n4 = tampilkan data pada antrean\n5 = cek apakah data kosong\n6 = keluar aplikasi")
         try:
             masukan = int(input('masukkan inputan -> '))
